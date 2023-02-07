@@ -1,0 +1,350 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background: #ff8d01;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px;
+  color: white;
+}
+
+.nav_items a {
+  margin: 15px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav_items a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 151, 5);
+  transition: all 0.5s;
+}
+
+.nav_items a:hover::before {
+  width: 100% !important;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav_items {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: -webkit-fill-available;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .nav_items a {
+    text-align: center;
+  }
+
+  .nav_toggle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2) {
+    display: none;
+  }
+
+  .close span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .open {
+    transform: translateX(0) !important
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background: #171717;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #2a0944;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(https://img.freepik.com/foto-gratis/grupo-tres-amigos-disfrutando-hamburguesas_23-2148718915.jpg?w=2000) no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(6, 0, 0);
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 150px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid #ffffff;
+  color: #fff;
+  text-decoration: none;
+  background: #2a0944;
+}
+
+.btn:hover {
+  background: none;
+}
+
+.content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sau {
+  padding: 50px 0;
+  background: #303030;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: centers;
+}
+
+.box-container .box {
+  height: 170px;
+  width: 270px;
+  background: #171717;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.box-container .box i {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #2a0944;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.box-container .box h3 {
+  font-size: 20px;
+  color: #d82525;
+}
+
+.box-container .box p {
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.price {
+  background: url(/img/postres-grid-.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.about {
+  background: #303030;
+  padding: 50px 0;
+}
+
+.contact {
+  padding: 50px 0;
+  background: #171717;
+}
+
+.footer-section {
+  display: flex;
+}
+
+.f-enlaces {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+}
+
+.f-enlaces a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  p {
+    padding: 0 50px;
+  }
+
+  .title {
+    margin-bottom: 0px;
+    font-size: 40px;
+  }
+
+  .sau {
+    height: 100vh;
+    padding: 50px 0;
+  }
+
+  .about {
+    height: 100vh;
+    padding: 50px 0;
+  }
+
+  .f-enlaces {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+/* footer*/
+
+footer {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: rgb(13, 13, 13);
+}
+
+.contenedor-principal {
+  color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin-left: 20px;
+}
+
+.contenedor-principal a {
+  text-decoration: none;
+  color: #9a9a9a;
+  margin-top: 10px;
+}
+
+.contenedor-principal a:hover {
+  color: white;
+}
+
+.contenedor-principal i {
+  color: #9a9a9a;
+}
+
+.contenedores-secundarios {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.contenedor-principal p {
+  width: 100%;
+  text-align: center;
+}
+
+
+/*careusel*/

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<meta>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<link rel="stylesheet" href="/css/estilos.css">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="/css/modal.css">
+<link rel="stylesheet" href="carousel.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/ed5264afc7.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e71d5ce863.js" crossorigin="anonymous"></script>
+
+<title>Inicio</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <label class="logo">Hamburgesas ¡OMG!</label>
+        <ul class="items_menu" id="otroModo">
+        <li><a href="/carpetas/catalogo.html">Catálogo</a></li>
+        <li><label for="btn-modal">Registrar Cliente</label></li>
+        <li><label for="btn-modal">Gestionar Producto</label></li>
+        <li> <a href="login.html">Registrarse/Iniciar Sesión</a></li>
+        </ul>
+        <!--modal registrar cliente y gestionar producto-->
+        <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <h2>Registrar Empleados</h2>
+                    <input class="controls" type="cedula" name="cedula" id="cedula"
+                        placeholder="Ingrese cedula del Empleado">
+                    <input class="controls" type="text" name="nombres" id="nombres"
+                        placeholder="Ingrese nombres del Empleado">
+                    <input class="controls" type="text" name="apellidos" id="nombres"
+                        placeholder="Ingrese apellidos del Empleado">
+                    <input class="controls" type="email" name="correo" id="nombres"
+                        placeholder="Ingrese correo del Empleado">
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">Cerrar</label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
+            </div>
+            <span class="btn-menu" onclick="showmenu()"> 
+            <i class="fa-solid fa-bars"></i>
+            </span>
+        </nav>
+    <!--Fin del nav-->
+    <header class="content header">
+
+        <h2 class="title">“Bienvenidos a Hamburgesas ¡OMG!”</h2>
+        <p></p>
+        <a href="/carpetas/catalogo.html" class="btn">Saber mas</a>
+    </header>
+
+    <section class="content sau">
+        <h2 class="title"></h2>
+        <p>
+            CHUP CHUP KINGS
+        </p>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-burger"></i>
+                <h3>HAMBUERGUESAS</h3>
+                <p>Con los mejores equipos.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-glass-water-droplet"></i>
+                <h3>BEBIDAS</h3>
+                <p>Con lo mejor de todos.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-ice-cream"></i>
+                <h3>POSTRES</h3>
+                <p>Con mas de 2 años de experiencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title"></h2>
+            <p>Solicita asesoría Siempre es bueno conversar con un PRO</p>
+            <a href="/login.html" class="btn">Saber como</a>
+        </article>
+    </section>
+
+    <section class="content about">
+        <h2 class="title"></h2>
+        <p>
+            
+        </p>
+        <div class="carrousel">
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="https://i.ytimg.com/vi/d8nl-IA7XN0/maxresdefault.jpg" alt=""></li>
+                    <li><img src="https://www.sabervivirtv.com/medio/2022/02/14/tartaletas-de-crema-de-cafe_a8a74dc4_1280x720.jpg" alt=""></li>
+                    <li><img src="https://www.hogarmania.com/archivos/201903/postres-chocolate-1280x720x80xX.jpg" alt=""></li>
+                    <li><img src="/img/helado.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    <br>
+    <!--barra inferior "footer"-->
+    <footer>
+        <div class="contenedor-principal">
+            <div class="contenedores-secundarios">
+                <h5>INFORMACIÓN DE CONTACTO</h5>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Direccion: Husares y Domingo yepez</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> Correo Electrónico:
+                    jav.garcia@yavirac.edu.ec</a>
+                <a href="#"><i class="fa-solid fa-mobile-screen"></i> (593) - 02 2573071</a>
+            </div>
+            <div class="contenedores-secundarios">
+                <h5>REDES SOCIALES</h5>
+                <a href="https://www.facebook.com/marketplace/?ref=bookmark"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/johan_garcia1234/"><i class="fa-brands fa-instagram-square"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                <a href="#"><i class="fa-brands fa-whatsapp-square"></i> WhatsApp</a>
+            </div>
+            <div class="contenedores-secundarios">
+                <h5>SOBRE NOSOTROS</h5>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabaja con Nosotros</a>
+                <a href="/carpetas/formulario-contacto.html">Contáctanos</a>
+            </div>
+            <div class="contenedores-secundarios">
+                <h5>SERVICIO AL CLIENTE</h5>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Politicas de Privacidad</a>
+            </div>
+            <p>Copyrigth - All rights reserved © 2022</p>
+        </div>
+    </footer>
+</body>
+<!--  Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="/js/nav.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/swetA.js"></script>
+</html>
